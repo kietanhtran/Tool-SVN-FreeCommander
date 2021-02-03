@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from time import sleep
 driver = webdriver.Ie("D:\Downloads\IEDriverServer.exe")
 driver.get("https://b2b-gateway.renesas.com/login/ssl")
 driver.implicitly_wait(15) 
@@ -12,3 +13,5 @@ for i in arr:
     password += pass1
 driver.find_element_by_name("PASSWORD").send_keys(password)
 button = driver.find_element_by_class_name("btnCustom").click()
+sleep(12)
+driver.quit()
