@@ -1,0 +1,1 @@
+TortoiseProc.exe /command:log /path:%1 /closeonend:1
